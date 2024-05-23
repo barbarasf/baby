@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quer namorar comigo?</title>
+  <style>
+    /* Estilo para o botão 'Não' */
+    #naoBtn {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: not-allowed; /* Definindo o cursor para 'não permitido' */
+      background-color: #e2dddd;
+      border: none;
+      color: rgb(10, 1, 1);
+      border-radius: 5px;
+      transition: transform 0.3s ease; /* Adicionando transição para a animação */
+      position: absolute; /* Alterando para posição absoluta */
+    }
+  </style>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #ff9999; margin: 0; height: 100vh; position: relative;">
+  <div class="container" style="text-align: center;">
+    <h1 style="font-size: 32px; color: #333;">Baby quer namorar comigo?</h1>
+    <a href="resposta.html?resposta=Delicioso,%20que%20bom%20que%20aceitou,%20usufruindo%20do%20seu%20livre%20arb%C3%ADtrio.%20Te%20amo"><button id="simBtn" style="margin: 10px; padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: #e2dddd; border: none; color: rgb(10, 1, 1); border-radius: 5px; transition: background-color 0.3s ease;">Sim</button></a>
+    <!-- Incluindo o efeito no botão 'Não' -->
+    <button id="naoBtn" onmouseover="moverBotao()">Não</button>
+  </div>
+  <script>
+    function moverBotao() {
+      // Obtém uma posição aleatória dentro dos limites da janela do navegador
+      const left = Math.random() * (window.innerWidth - 150); // Limitando a posição ao tamanho da janela do navegador
+      const top = Math.random() * (window.innerHeight - 50); // Limitando a posição ao tamanho da janela do navegador
+
+      // Seleciona o botão 'Não' e define a nova posição
+      const naoBtn = document.getElementById('naoBtn');
+      naoBtn.style.left = `${left}px`;
+      naoBtn.style.top = `${top}px`;
+    }
+  </script>
+</body>
+</html>
