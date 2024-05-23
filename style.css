@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffe6e6; /* Vermelho claro */
+    background-color: #a73535; /* Vermelho claro */
     margin: 0;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #ff9999; /* Vermelho mais escuro */
+    background-color: #e2dddd; /* Vermelho mais escuro */
     border: none;
     color: rgb(133, 40, 40);
     border-radius: 5px;
